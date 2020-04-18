@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style type="text/css">
+
+body {
+    font-family: -webkit-body;
+  place-items: center;
+}
+.snd_w_wrap {
+    margin: auto;
+    padding-bottom: 83px;
+    background: #dddddd29;
+}
+.snd_wrap {
+    margin: auto;
+    background: linear-gradient(to bottom right, #ffffff 15%, transparent),
+    radial-gradient(circle at 100% 0%, rgba(255,255,255,.2) 10%, transparent 20%) center center / 15px 15px,
+    linear-gradient(to bottom right, #fafafa, #62b9e4);
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 25px;
+    margin-top: -163px;
+    box-shadow: 0px 2px 14px 2px #cccccc61;
+}
+.img_text {
+    background: #4e4e4e5e;
+}
+.image_wrap {
+    margin-bottom: 65px;
+    width: 100%;
+    height: 534px;
+    background: linear-gradient(#8282820d,#8282820d),linear-gradient(#8282820d,#8282820d),url(https://cdn.pixabay.com/photo/2015/03/31/12/54/bagan-701006_960_720.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    background-size: cover;
+}
+.image_wrap {
+    text-align: center;
+    padding-top: 206px;
+    color: #fff;
+    font-size: 41px;
+}
+
+.card_title {
+    color: #fff;
+    text-shadow: 2px 2px #ff0000;
+}
+
+
+
+
+
+.wrapper {
+  position: relative;
+  perspective: 40em;
+  display: grid;
+  transform-style: preserve-3d;
+}
+
+.card {
+  grid-area: 1 / 1;
+  width: 278px;
+  transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+  background: rgba(249, 198, 26, 0.88);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 900;
+  backface-visibility: hidden;
+  box-shadow: 0 10px 30px -3px rgba(0,0,0,.1);
+}
+
+div {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.card .enclosed {
+  background: #000;
+  line-height: 1;
+  color: rgba(249, 198, 26, 1);
+  padding: 0 5px;
+  display: inline-block;
+  transform: translate(-1px, 1px) scale(0.75);
+  transform-origin: right center;
+}
+
+.wrapper::before {
+  --bw: 9px;
+  grid-area: 1 / 1;
+  content: '';
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  margin-top: calc(-1 * var(--bw));
+  margin-left: calc(-1 * var(--bw));
+  background: transparent;
+  transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+  pointer-events: none;
+  border: var(--bw) solid #000;
+  box-sizing: content-box;
+}
+
+
+.wrapper:hover > div,
+.wrapper:hover::before {
+  transform: none;
+}
+
+
+.wrapper > div,
+.wrapper::before {
+  will-change: transform;
+  transition: .3s transform cubic-bezier(.25,.46,.45,1);
+}
+.this_is_for_col {
+    width: fit-content;
+    display: inline-table;
+    margin-right: 65px;
+}
+.enclosed_wrap {
+    text-align: center;
+    line-height: 7px;
+    margin-left: -80px;
+}
+
+span.for_game {
+    font-size: 20px;
+}
+</style>
+    <title>My Site!</title><script src="https://kit.fontawesome.com/0d5ba8849b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="">
+      <div class="col-md-12 col-12 image_wrap">
+        <span class="img_text">Alphabet</span>
+      </div>
+      <div class="snd_w_wrap">
+        <div class="col-md-10 col-11 snd_wrap">
+                    
+          
+            <div class="this_is_for_col">
+              <div class="card_full_w_wrap">
+                <div class="wrapper card_full_wrap">
+                  <div class="card">
+                    <div class="enclosed_wrap">
+                      <span class="enclosed">Phrase</span>
+                      <br>
+                      <span class="for_game">
+                        Game <i class="far fa-file-word"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="this_is_for_col">
+              <div class="card_full_w_wrap">
+                <div class="wrapper card_full_wrap">
+                  <div class="card">
+                    <div class="enclosed_wrap">
+
+                      <span class="enclosed">Easy</span>
+                      <br>
+                      <span class="for_game">
+                        Game <i class="fas fa-disease"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="this_is_for_col">
+              <div class="card_full_w_wrap">
+                <div class="wrapper card_full_wrap">
+                  <div class="card">
+                    <div class="enclosed_wrap">
+                      <span class="enclosed">Hard</span>
+                      <br>
+                      <span class="for_game">
+                        Game <i class="fas fa-hard-hat"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="this_is_for_col">
+              <div class="card_full_w_wrap">
+                <div class="wrapper card_full_wrap">
+                  <div class="card">
+                    <div class="enclosed_wrap">
+                      <span class="enclosed">Speaking</span>
+                      <br>
+                      <span class="for_game">
+                        Game <i class="fas fa-volume-up"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="this_is_for_col">
+              <div class="card_full_w_wrap">
+                <div class="wrapper card_full_wrap">
+                  <div class="card">
+                    <div class="enclosed_wrap">
+                      <span class="enclosed">Memory</span>
+                      <br>
+                      <span class="for_game">
+                        Game <i class="fas fa-brain"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="this_is_for_col">
+              <div class="card_full_w_wrap">
+                <div class="wrapper card_full_wrap">
+                  <div class="card">
+                    <div class="enclosed_wrap">
+                      <span class="enclosed">Recall</span>
+                      <br>
+                      <span class="for_game">
+                        Game <i class="fas fa-headset"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
